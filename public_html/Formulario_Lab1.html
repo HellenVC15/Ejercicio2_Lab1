@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        
+        
+        <style>
+            
+			form {
+				margin: 0 auto;
+				width: 800px;
+				padding: 1em;
+    
+			}
+                        
+                        h1 {
+                                
+				width: 730px;
+                                color:#FBFBEF;
+                                box-sizing: border-box; 
+				border: 1px solid #BDBDBD;
+                                background-color:#000000;
+                                margin-bottom: 1px;
+                                margin-left: 30px;
+                                margin-right:125px;
+                                font-family:'Roboto', sans-serif;
+                                font-size:20pt;
+				
+			}
+
+                        
+                        
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			form li + li {
+				margin-top: 1em;
+			}
+
+			label {
+	
+				display: inline-table;
+				width: 180px;
+                                height:34px;
+                                outline: 10px solid #D8D8D8;
+                                margin-bottom: 10px;
+				text-align: right;
+                                background-color:#D8D8D8;
+                                font-family:'Roboto', sans-serif;
+                                 font-size:15pt;
+                                                     
+			}
+
+			input,
+			textarea {
+				display: inline-block;
+                                font-family:'Roboto', sans-serif;
+				width: 500px;
+				box-sizing: border-box; 
+				border: 5px solid #000000;
+                                 outline: 10px solid #D8D8D8;
+                                background-color:#848484;
+                                height:35px;
+                                margin-left: 20px;
+                                margin-bottom: 10px;
+                                color:#FBFBEF;     
+                                
+			}
+
+			input:focus,
+			textarea:focus {
+				border-color: #000;
+			}
+
+			textarea {
+				vertical-align: top;
+				height: 5em;
+			}
+
+			.button {
+				padding-left: 300px;
+			}
+
+			button {
+				width: 150px;
+                                height:50px;
+                                margin-left: 0.5em;
+                                font-family:'Roboto', sans-serif;
+                                font-size:20pt;
+                                color: white;
+                                background: linear-gradient(180deg, #A4A4A4 0%,#151515 100%);
+			}
+		</style>
+    </head>
+    <body>
+        
+        
+    <center> <h1>Formulario de contacto</h1> </center>
+       
+            
+        <form action="/my-handling-form-page" method="post">
+            
+            <ul>
+
+                <li>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre">
+                </li>
+                <li>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos">
+                </li>
+
+                <li>
+                    <label for="fecha_nacimiento">Fecha Nacimiento:</label>
+                    <input type="date" name="fecha_nacimiento">
+                </li>
+                <li>
+                    <label for="mail">E-mail</label>
+                    <input type="email" name="email">
+                </li>
+                <li>
+                    <label for="msg">Comentarios:</label>
+                    <textarea name="Comentarios"></textarea>
+                </li>
+
+                <li class="button">
+                    <button type="submit">Enviar</button>
+                </li>
+            </ul>
+        </form>
+        
+    </body>
+</html>
+
